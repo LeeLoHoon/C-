@@ -1,8 +1,6 @@
 #include <iostream>
 #include "stack.h" 
 
-
-int max_num=100;
 Stack::Stack()
 {
     top = -1;

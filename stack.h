@@ -1,22 +1,31 @@
-fndef __STACK_H__
+#ifndef __STACK_H__
 #define __STACK_H__
 #include <string>
 using namespace std;
 
-class  Stack  // Declares a class data type
+typedef struct tElement{
+	string name;
+	int id;
+	string email;
+}Element
+
+typedef struct list_node {
+Element data;
+struct list_node *link;
+} stack_node;
+
+class  Stack 
 {                       
-  private:           // Private data members
-    int top; 
-    int max_size; 
-    string *stack;
+  private:            
+    int lenth; 
+    stack_node *topNode;
   public:               
     Stack();       
     ~Stack();
-    Stack(int max_stack_size);
     bool IsFullS () const;
     bool IsEmptyS ()  const;              
-    void Push (string  item);
-    string Pop ();
+    void Push (Element  item);
+    Element Pop ();
     void Print () const;
 };  
 #endif 
