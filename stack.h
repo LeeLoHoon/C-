@@ -4,28 +4,23 @@
 using namespace std;
 
 typedef struct tElement{
-	string name;
-	int id;
-	string email;
-}Element
-
+  string name;
+  string id;
+  string email;
+}Element;
+ 
 typedef struct list_node {
-Element data;
-struct list_node *link;
-} stack_node;
-
-class  Stack 
-{                       
-  private:            
-    int lenth; 
+  Element data;
+  struct list_node *link;
+  }stack_node;
+ 
+class Stack{
+  private:
     stack_node *topNode;
-  public:               
-    Stack();       
-    ~Stack();
-    bool IsFullS () const;
-    bool IsEmptyS ()  const;              
+  public:
+    int length;
+    Stack();
     void Push (Element  item);
     Element Pop ();
-    void Print () const;
-};  
-#endif 
+};
+#endif
