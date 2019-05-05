@@ -17,10 +17,10 @@ int main()
    		 cerr << "Exception occurred while opening the file." << endl;}
     //fp가 끝날때까지 돌림
     getline(fp, longString);
-    //longString이 끝날때 까지 돌림
+    //longString이 끝날때 까지 돌림.
     while()
-    //splitElement를 파라미터로 push
+    //splitElement를 파라미터로 push.
     push
-    //pop하면 Element를 거꾸로 print하기
+    //pop하면 Element를 거꾸로 print하기.
   return 0;
 }
